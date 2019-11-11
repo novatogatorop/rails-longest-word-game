@@ -1,0 +1,9 @@
+<h1>SCORE</h1>
+
+<% if @english_input %>
+<p>congratulation! <strong><%= @input %></strong>, It's an english word!</p>
+<% else %>
+<p><strong><%= @input %></strong>, It's not english word!</p>
+<% end %>
+
+<%= link_to "Play again!", new_path  %>
